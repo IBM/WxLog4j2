@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="code/classes" path="code/source"/>
+	<classpathentry kind="var" path="WEBMETHODS_HOME/common/lib/wm-isclient.jar"/>
+	<classpathentry kind="var" path="WEBMETHODS_HOME/IntegrationServer/lib/wm-isserver.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="code/jars/log4j-api-2.20.0.jar"/>
+	<classpathentry kind="lib" path="code/jars/log4j-core-2.20.0.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-api-2.20.0.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-core-2.20.0.jar"/>
+	<classpathentry kind="output" path="code/classes"/>
+</classpath>
