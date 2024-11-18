@@ -14,7 +14,7 @@ Normal deployment. The startup will create and write into a file ./logs/WxLog4j2
 
 Create a file ./config/log4j2.xml like in WxLog4j2Demo:
 
-<pre><code>
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration packages="wx.log4j2">
 	<Appenders>
@@ -35,18 +35,24 @@ Create a file ./config/log4j2.xml like in WxLog4j2Demo:
 		</Logger>
 	</Loggers>
 </Configuration>
-</code></pre>
+```
 
 You can simple use the predefined appender WxLog4j2RollingFile or any other appender Log4j2 is providing.
 
-Run
-<pre><code>
-wx.log4j2.pub:addLog4j2Configuration
-</code></pre>
+Invoke
+<pre><code>wx.log4j2.pub:addLog4j2Configuration</code></pre>
 from your package, e.g. from startup. It will register you log4j2.xml
 
 Invoke
-<pre><code>
-wx.log4j2.pub:log
-</code></pre>
+<pre><code>wx.log4j2.pub:log</code></pre>
+
 from your code and log into your logfile by using the input "function" in order to define your Logger like "WxLog4j2Demo"
+
+<h2>Tested Runtimes</h2>
+
+IS 10.11
+
+<h2>Disclaimer</h2>
+<h3>IBM Public Repository Disclosure</h3>
+All content in these repositories including code has been provided by IBM under the associated open source software license and IBM is under no obligation to provide enhancements, updates, or support. IBM developers produced this code as an open source project (not as an IBM product), and IBM makes no assertions as to the level of quality nor security, and will not be maintaining this code going forward.
+
