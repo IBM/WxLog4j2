@@ -34,7 +34,7 @@
       <value name="modifiable">true</value>
     </record>
   </record>
-  <value name="node_comment"></value>
+  <value name="node_comment">This is closing active Loggers. It is automatically invoked by the shutdown service</value>
   <value name="stateless">yes</value>
   <value name="caching">no</value>
   <value name="prefetch">no</value>
@@ -67,6 +67,10 @@
     <null name="serviceToInvoke"/>
     <value name="resetPeriod">300</value>
     <value name="cancelThreadOnTimeout">false</value>
+  </record>
+  <record name="concurrentrequestlimitsettings" javaclass="com.wm.util.Values">
+    <value name="maxConcurrentRequests">20</value>
+    <value name="concurrentRequestLimitEnabled">false</value>
   </record>
   <array name="allowedHTTPMethods" type="value" depth="1">
     <value>HEAD</value>
